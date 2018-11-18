@@ -46,14 +46,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\DataAccessHelper.cs" />
+    <Compile Include="DAL\KhachHangDAL.cs" />
+    <Compile Include="DLL\KhachHangDLL.cs" />
+    <Compile Include="DTO\KhachHang.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\QLKhachHangGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QLKhachHangGUI.Designer.cs">
+      <DependentUpon>QLKhachHangGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Source.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Source.Designer.cs">
+      <DependentUpon>Source.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\QLKhachHangGUI.resx">
+      <DependentUpon>QLKhachHangGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Source.resx">
+      <DependentUpon>Source.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -76,10 +97,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DLL\" />
-    <Folder Include="DTO\" />
-    <Folder Include="GUI\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
