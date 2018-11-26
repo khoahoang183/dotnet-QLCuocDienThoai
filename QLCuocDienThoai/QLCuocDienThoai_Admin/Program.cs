@@ -17,7 +17,7 @@ namespace QLCuocDienThoai_Admin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QLKhachHangGUI());
+            Application.Run(new AdminManagementForm());
         }
     }
 }

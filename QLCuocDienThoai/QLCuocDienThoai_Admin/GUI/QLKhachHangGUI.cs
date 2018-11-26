@@ -16,6 +16,7 @@ namespace QLCuocDienThoai_Admin.GUI
     {
         KhachHangDLL khachhangdll = new KhachHangDLL();
         KhachHang khachhang = new KhachHang();
+        int flag = 0; // 1 la them, 2 la sua, 3 la khoa
 
         public QLKhachHangGUI()
         {
@@ -35,6 +36,29 @@ namespace QLCuocDienThoai_Admin.GUI
             dgvTable.Columns[3].Width = 158;
 
             BingDing();
+            DisableTextBox(false);
+
+        }
+        void DisableTextBox(bool res)
+        {
+            txtMAKH.Enabled = res;
+            txtTEN.Enabled = res;
+            txtTHONGTIN.Enabled = res;
+            txtTINHTRANG.Enabled = res;
+
+            // button
+            btnThem.Enabled = !res;
+            btnSua.Enabled = !res;
+            btnXoa.Enabled = !res;
+            btnLuu.Enabled = res;
+            btnHuy.Enabled = res;
+        }
+        void ClearData()
+        {
+            txtMAKH.Clear();
+            txtTEN.Clear();
+            txtTHONGTIN.Clear();
+            txtTINHTRANG.Clear();
         }
         void BingDing()    // load du hieu qua cac text
         {
@@ -50,29 +74,76 @@ namespace QLCuocDienThoai_Admin.GUI
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            khachhang.SetMAKH(Int32.Parse(txtMAKH.Text.Trim()));
-            khachhang.SetTEN(txtTEN.Text.Trim());
-            khachhang.SetTHONGTIN(txtTHONGTIN.Text.Trim());
-            khachhang.SetTINHTRANG(Int32.Parse(txtTINHTRANG.Text.Trim()));
-            khachhangdll.AddData(khachhang);
-            QLKhachHangGUI_Load(sender, e);
+            flag = 1;
+            DisableTextBox(true);
+            ClearData();
+            txtMAKH.Enabled = false;
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            khachhang.SetMAKH(Int32.Parse(txtMAKH.Text.Trim()));
-            khachhang.SetTEN(txtTEN.Text.Trim());
-            khachhang.SetTHONGTIN(txtTHONGTIN.Text.Trim());
-            khachhang.SetTINHTRANG(Int32.Parse(txtTINHTRANG.Text.Trim()));
-            khachhangdll.UpdateData(khachhang);
-            QLKhachHangGUI_Load(sender, e);
+            flag = 2;
+            DisableTextBox(true);
+            txtMAKH.Enabled = false;
+            txtTEN.Text = null;
+            txtTHONGTIN.Text = null;
+            txtTINHTRANG.Text = null;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            khachhang.SetMAKH(Int32.Parse(txtMAKH.Text.Trim()));
+            flag = 3;
+            DisableTextBox(true);
+            txtMAKH.Enabled = false;
+            txtTEN.Enabled = false;
+            txtTHONGTIN.Enabled = false;
+            txtTINHTRANG.Enabled = false;
+        }
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            if (flag !=1) // them ko can ma
+            {
+                khachhang.SetMAKH(Int32.Parse(txtMAKH.Text.Trim()));
+            }
+            khachhang.SetTEN(txtTEN.Text.Trim());
+            khachhang.SetTHONGTIN(txtTHONGTIN.Text.Trim());
             khachhang.SetTINHTRANG(Int32.Parse(txtTINHTRANG.Text.Trim()));
-            khachhangdll.LockData(khachhang.GetMAKH(), khachhang.GetTINHTRANG());
+
+            if (flag == 1) // them 
+            {                
+                if (khachhangdll.AddData(khachhang) == true)
+                {
+                    MessageBox.Show("Thêm Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Thêm Thất Bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            if (flag == 2) // sua 
+            {
+                if (khachhangdll.UpdateData(khachhang) == true)
+                {
+                    MessageBox.Show("Sửa Hóa Đơn Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Sửa Hóa Đơn Thất Bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            if (flag==3)
+            {
+                if (khachhangdll.LockData(khachhang.GetMAKH(), khachhang.GetTINHTRANG()) == true)
+                {
+                    MessageBox.Show("Đổi Tình Trạng Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Đổi Tình Trạng Thất Bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+
+            flag = 0;
             QLKhachHangGUI_Load(sender, e);
         }
 
@@ -98,5 +169,12 @@ namespace QLCuocDienThoai_Admin.GUI
         {
             QLKhachHangGUI_Load(sender, e);
         }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            QLKhachHangGUI_Load(sender, e);
+        }
+
+
     }
 }

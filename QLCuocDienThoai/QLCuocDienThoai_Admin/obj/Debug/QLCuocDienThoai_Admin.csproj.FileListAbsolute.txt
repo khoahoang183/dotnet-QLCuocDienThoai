@@ -9,3 +9,5 @@ F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuoc
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.csproj.CoreCompileInputs.cache
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.exe
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.pdb
+F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.GUI.QLDangKiSimGUI.resources
+F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.GUI.AdminManagementForm.resources
