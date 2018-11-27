@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLCuocDienThoaiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CHITIETSUDUNG">
+    <Key>
+      <PropertyRef Name="MACTSD" />
+    </Key>
+    <Property Name="MACTSD" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MASIM" Type="Int32" Nullable="false" />
+    <Property Name="BATDAU" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="KETTHUC" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SOPHUTSUDUNG" Type="Int32" />
+    <Property Name="CUOCPHI" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="THONGTINSIM" Relationship="Self.FK_CHITIETSUDUNG_MASIM" FromRole="CHITIETSUDUNG" ToRole="THONGTINSIM" />
+  </EntityType>
+  <EntityType Name="GIACUOC">
+    <Key>
+      <PropertyRef Name="MAGC" />
+    </Key>
+    <Property Name="MAGC" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TEN" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SOTIEN" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="APDUNGTU" Type="Time" Precision="7" />
+    <Property Name="APDUNGDEN" Type="Time" Precision="7" />
+    <Property Name="TINHTRANG" Type="Int32" />
+  </EntityType>
+  <EntityType Name="HOADONDANGKI">
+    <Key>
+      <PropertyRef Name="MAHDDK" />
+    </Key>
+    <Property Name="MAHDDK" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MASIM" Type="Int32" />
+    <Property Name="PHIDANGKI" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="NGAYDANGKI" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="THONGTINSIM" Relationship="Self.FK_HOADONDANGKI_MASIM" FromRole="HOADONDANGKI" ToRole="THONGTINSIM" />
+  </EntityType>
+  <EntityType Name="HOADONTINHCUOC">
+    <Key>
+      <PropertyRef Name="MAHDTC" />
+    </Key>
+    <Property Name="MAHDTC" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MASIM" Type="Int32" />
+    <Property Name="TONGTIEN" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="THANHTOAN" Type="Int32" />
+    <NavigationProperty Name="THONGTINSIM" Relationship="Self.FK_HOADONTINHCUOC_MASIM" FromRole="HOADONTINHCUOC" ToRole="THONGTINSIM" />
+  </EntityType>
+  <EntityType Name="KHACHHANG">
+    <Key>
+      <PropertyRef Name="MAKH" />
+    </Key>
+    <Property Name="MAKH" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TEN" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="THONGTIN" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TINHTRANG" Type="Int32" />
+    <NavigationProperty Name="THONGTINSIMs" Relationship="Self.FK_THONGTINSIM_MAKH" FromRole="KHACHHANG" ToRole="THONGTINSIM" />
+  </EntityType>
+  <EntityType Name="THONGTINSIM">
+    <Key>
+      <PropertyRef Name="MASIM" />
+    </Key>
+    <Property Name="MASIM" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SODT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MAKH" Type="Int32" />
+    <Property Name="TINHTRANG" Type="Int32" />
+    <NavigationProperty Name="CHITIETSUDUNGs" Relationship="Self.FK_CHITIETSUDUNG_MASIM" FromRole="THONGTINSIM" ToRole="CHITIETSUDUNG" />
+    <NavigationProperty Name="HOADONDANGKIs" Relationship="Self.FK_HOADONDANGKI_MASIM" FromRole="THONGTINSIM" ToRole="HOADONDANGKI" />
+    <NavigationProperty Name="HOADONTINHCUOCs" Relationship="Self.FK_HOADONTINHCUOC_MASIM" FromRole="THONGTINSIM" ToRole="HOADONTINHCUOC" />
+    <NavigationProperty Name="KHACHHANG" Relationship="Self.FK_THONGTINSIM_MAKH" FromRole="THONGTINSIM" ToRole="KHACHHANG" />
+  </EntityType>
+  <Association Name="FK_CHITIETSUDUNG_MASIM">
+    <End Role="THONGTINSIM" Type="Self.THONGTINSIM" Multiplicity="1" />
+    <End Role="CHITIETSUDUNG" Type="Self.CHITIETSUDUNG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="THONGTINSIM">
+        <PropertyRef Name="MASIM" />
+      </Principal>
+      <Dependent Role="CHITIETSUDUNG">
+        <PropertyRef Name="MASIM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HOADONDANGKI_MASIM">
+    <End Role="THONGTINSIM" Type="Self.THONGTINSIM" Multiplicity="0..1" />
+    <End Role="HOADONDANGKI" Type="Self.HOADONDANGKI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="THONGTINSIM">
+        <PropertyRef Name="MASIM" />
+      </Principal>
+      <Dependent Role="HOADONDANGKI">
+        <PropertyRef Name="MASIM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HOADONTINHCUOC_MASIM">
+    <End Role="THONGTINSIM" Type="Self.THONGTINSIM" Multiplicity="0..1" />
+    <End Role="HOADONTINHCUOC" Type="Self.HOADONTINHCUOC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="THONGTINSIM">
+        <PropertyRef Name="MASIM" />
+      </Principal>
+      <Dependent Role="HOADONTINHCUOC">
+        <PropertyRef Name="MASIM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_THONGTINSIM_MAKH">
+    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="0..1" />
+    <End Role="THONGTINSIM" Type="Self.THONGTINSIM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACHHANG">
+        <PropertyRef Name="MAKH" />
+      </Principal>
+      <Dependent Role="THONGTINSIM">
+        <PropertyRef Name="MAKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QLCuocDienThoaiEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CHITIETSUDUNGs" EntityType="Self.CHITIETSUDUNG" />
+    <EntitySet Name="GIACUOCs" EntityType="Self.GIACUOC" />
+    <EntitySet Name="HOADONDANGKIs" EntityType="Self.HOADONDANGKI" />
+    <EntitySet Name="HOADONTINHCUOCs" EntityType="Self.HOADONTINHCUOC" />
+    <EntitySet Name="KHACHHANGs" EntityType="Self.KHACHHANG" />
+    <EntitySet Name="THONGTINSIMs" EntityType="Self.THONGTINSIM" />
+    <AssociationSet Name="FK_CHITIETSUDUNG_MASIM" Association="Self.FK_CHITIETSUDUNG_MASIM">
+      <End Role="THONGTINSIM" EntitySet="THONGTINSIMs" />
+      <End Role="CHITIETSUDUNG" EntitySet="CHITIETSUDUNGs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HOADONDANGKI_MASIM" Association="Self.FK_HOADONDANGKI_MASIM">
+      <End Role="THONGTINSIM" EntitySet="THONGTINSIMs" />
+      <End Role="HOADONDANGKI" EntitySet="HOADONDANGKIs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HOADONTINHCUOC_MASIM" Association="Self.FK_HOADONTINHCUOC_MASIM">
+      <End Role="THONGTINSIM" EntitySet="THONGTINSIMs" />
+      <End Role="HOADONTINHCUOC" EntitySet="HOADONTINHCUOCs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_THONGTINSIM_MAKH" Association="Self.FK_THONGTINSIM_MAKH">
+      <End Role="KHACHHANG" EntitySet="KHACHHANGs" />
+      <End Role="THONGTINSIM" EntitySet="THONGTINSIMs" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

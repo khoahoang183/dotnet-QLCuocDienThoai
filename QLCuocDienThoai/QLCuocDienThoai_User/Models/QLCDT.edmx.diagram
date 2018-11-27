@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="78bcee1cd3364438bccc99f76fb6b865" Name="Diagram1">
+        <EntityTypeShape EntityType="QLCuocDienThoaiModel.CHITIETSUDUNG" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCuocDienThoaiModel.GIACUOC" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCuocDienThoaiModel.HOADONDANGKI" Width="1.5" PointX="5.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCuocDienThoaiModel.HOADONTINHCUOC" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCuocDienThoaiModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCuocDienThoaiModel.THONGTINSIM" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <AssociationConnector Association="QLCuocDienThoaiModel.FK_CHITIETSUDUNG_MASIM" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCuocDienThoaiModel.FK_HOADONDANGKI_MASIM" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCuocDienThoaiModel.FK_HOADONTINHCUOC_MASIM" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCuocDienThoaiModel.FK_THONGTINSIM_MAKH" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

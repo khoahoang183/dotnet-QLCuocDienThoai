@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLCuocDienThoaiModelStoreContainer" CdmEntityContainer="QLCuocDienThoaiEntities">
+    <EntitySetMapping Name="CHITIETSUDUNGs">
+      <EntityTypeMapping TypeName="QLCuocDienThoaiModel.CHITIETSUDUNG">
+        <MappingFragment StoreEntitySet="CHITIETSUDUNG">
+          <ScalarProperty Name="MACTSD" ColumnName="MACTSD" />
+          <ScalarProperty Name="MASIM" ColumnName="MASIM" />
+          <ScalarProperty Name="BATDAU" ColumnName="BATDAU" />
+          <ScalarProperty Name="KETTHUC" ColumnName="KETTHUC" />
+          <ScalarProperty Name="SOPHUTSUDUNG" ColumnName="SOPHUTSUDUNG" />
+          <ScalarProperty Name="CUOCPHI" ColumnName="CUOCPHI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIACUOCs">
+      <EntityTypeMapping TypeName="QLCuocDienThoaiModel.GIACUOC">
+        <MappingFragment StoreEntitySet="GIACUOC">
+          <ScalarProperty Name="MAGC" ColumnName="MAGC" />
+          <ScalarProperty Name="TEN" ColumnName="TEN" />
+          <ScalarProperty Name="SOTIEN" ColumnName="SOTIEN" />
+          <ScalarProperty Name="APDUNGTU" ColumnName="APDUNGTU" />
+          <ScalarProperty Name="APDUNGDEN" ColumnName="APDUNGDEN" />
+          <ScalarProperty Name="TINHTRANG" ColumnName="TINHTRANG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOADONDANGKIs">
+      <EntityTypeMapping TypeName="QLCuocDienThoaiModel.HOADONDANGKI">
+        <MappingFragment StoreEntitySet="HOADONDANGKI">
+          <ScalarProperty Name="MAHDDK" ColumnName="MAHDDK" />
+          <ScalarProperty Name="MASIM" ColumnName="MASIM" />
+          <ScalarProperty Name="PHIDANGKI" ColumnName="PHIDANGKI" />
+          <ScalarProperty Name="NGAYDANGKI" ColumnName="NGAYDANGKI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOADONTINHCUOCs">
+      <EntityTypeMapping TypeName="QLCuocDienThoaiModel.HOADONTINHCUOC">
+        <MappingFragment StoreEntitySet="HOADONTINHCUOC">
+          <ScalarProperty Name="MAHDTC" ColumnName="MAHDTC" />
+          <ScalarProperty Name="MASIM" ColumnName="MASIM" />
+          <ScalarProperty Name="TONGTIEN" ColumnName="TONGTIEN" />
+          <ScalarProperty Name="THANHTOAN" ColumnName="THANHTOAN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHACHHANGs">
+      <EntityTypeMapping TypeName="QLCuocDienThoaiModel.KHACHHANG">
+        <MappingFragment StoreEntitySet="KHACHHANG">
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="TEN" ColumnName="TEN" />
+          <ScalarProperty Name="THONGTIN" ColumnName="THONGTIN" />
+          <ScalarProperty Name="TINHTRANG" ColumnName="TINHTRANG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THONGTINSIMs">
+      <EntityTypeMapping TypeName="QLCuocDienThoaiModel.THONGTINSIM">
+        <MappingFragment StoreEntitySet="THONGTINSIM">
+          <ScalarProperty Name="MASIM" ColumnName="MASIM" />
+          <ScalarProperty Name="SODT" ColumnName="SODT" />
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="TINHTRANG" ColumnName="TINHTRANG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
