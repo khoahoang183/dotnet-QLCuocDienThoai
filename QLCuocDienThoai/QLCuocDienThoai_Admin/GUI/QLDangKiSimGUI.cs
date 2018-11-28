@@ -353,7 +353,17 @@ namespace QLCuocDienThoai_Admin.GUI
 
         private void btnIn_Click(object sender, EventArgs e)
         {
-
+            String MaHD_From_Text = txtMaHD.Text;
+            if (MaHD_From_Text == "") // khong du thong tin
+            {
+                MessageBox.Show("Chọn Hóa đơn cần in!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                Report_HoaDonDangKy a = new Report_HoaDonDangKy();
+                a.MAHDDK = Int32.Parse(txtMaHD.Text);
+                a.ShowDialog();
+            }
         }
     }
 }

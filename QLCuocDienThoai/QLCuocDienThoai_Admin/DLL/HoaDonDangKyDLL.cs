@@ -35,5 +35,9 @@ namespace QLCuocDienThoai_Admin.DLL
         {
             return dal.SearchData(MAHDDK);
         }
+        public DataTable Report_HDDK(int MAHDDK)
+        {
+            return dal.Report_HDDK(MAHDDK);
+        }
     }
 }

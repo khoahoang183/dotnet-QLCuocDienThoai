@@ -84,7 +84,6 @@ F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_User\bin\Microsoft.AI.
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_User\bin\Microsoft.AI.WindowsServer.xml
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_User\bin\Microsoft.AI.Web.xml
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_User\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_User\obj\Debug\QLCuocDienThoai_User.csprojAssemblyReference.cache
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_User\obj\Debug\QLCuocDienThoai_User.csproj.CoreCompileInputs.cache
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_User\obj\Debug\QLCuocDienThoai_User.csproj.CopyComplete
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_User\obj\Debug\QLCuocDienThoai_User.dll

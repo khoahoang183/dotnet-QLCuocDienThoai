@@ -157,5 +157,28 @@ namespace QLCuocDienThoai_Admin.DAL
             }
             return data;
         }
+
+        public DataTable Report_HDDK(int MaHDDK)
+        {
+            cmd = new SqlCommand("Report_HoaDonDangKy");
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@vMAHDDK", MaHDDK);
+            cmd.Connection = con.Connect;
+            DataTable data = new DataTable();
+            try
+            {
+                con.OpenConnection();
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                sda.Fill(data);
+                con.CloseConnection();
+            }
+            catch (Exception ex)
+            {
+                string mex = ex.Message;
+                cmd.Dispose(); // tat session (phien lam viec) hien tai
+                con.CloseConnection();
+            }
+            return data;
+        }
     }
 }

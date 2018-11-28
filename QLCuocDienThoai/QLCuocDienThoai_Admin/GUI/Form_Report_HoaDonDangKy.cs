@@ -9,31 +9,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 namespace QLCuocDienThoai_Admin.GUI
 {
-    public partial class Report_HoaDonDangKy : Form
+    public partial class Form_Report_HoaDonDangKy : Form
     {
         public int MAHDDK; // chua truyen qua sao no hieu lul
-        public Report_HoaDonDangKy()
+        public Form_Report_HoaDonDangKy()
         {
             InitializeComponent();
         }
 
-        private void Report_HoaDonDangKy_Load(object sender, EventArgs e)
+        private void Form_Report_HoaDonDangKy_Load(object sender, EventArgs e)
         {
+            //ReportParameter para = new ReportParameter(); 
+            // para = new ReportParameter("vMaHDDK", "1");
+            //this.reportViewer1.LocalReport.SetParameters(para);
+
+
             string StrCon = @"Data Source=.;Initial Catalog=QLCUOCDIENTHOAI;Persist Security Info=True;User ID=sa;Password=123456";
 
             SqlConnection connect = new SqlConnection(StrCon);
             string sql = "Report_HoaDonDangKy @vMaHDDK";
-            object para = "1";
+            object para = "1";   // ma hoa don
             SqlCommand cmd = new SqlCommand(sql, connect);
 
             string[] listParament = sql.Split(' ');
-            foreach (string item in listParament)
-                if (item.Contains('@'))
-                {
-                    cmd.Parameters.AddWithValue(item, para);
-                }
+            if (listParament[1].Contains('@'))
+            {
+                cmd.Parameters.AddWithValue(listParament[1], para);
+            }
 
 
             SqlDataAdapter adp = new SqlDataAdapter(cmd);

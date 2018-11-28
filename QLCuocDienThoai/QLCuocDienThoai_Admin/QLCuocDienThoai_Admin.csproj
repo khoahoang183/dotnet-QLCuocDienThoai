@@ -146,7 +146,6 @@
     <EmbeddedResource Include="GUI\QLSuDungTinhCuocGUI.resx">
       <DependentUpon>QLSuDungTinhCuocGUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Report_HoaDonDangKy.rdlc" />
     <EmbeddedResource Include="GUI\Report_HoaDonDangKy.resx">
       <DependentUpon>Report_HoaDonDangKy.cs</DependentUpon>
     </EmbeddedResource>

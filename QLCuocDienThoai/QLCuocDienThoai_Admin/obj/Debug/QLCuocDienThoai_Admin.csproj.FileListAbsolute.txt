@@ -1,7 +1,6 @@
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\bin\Debug\QLCuocDienThoai_Admin.exe.config
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\bin\Debug\QLCuocDienThoai_Admin.exe
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\bin\Debug\QLCuocDienThoai_Admin.pdb
-F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.csprojAssemblyReference.cache
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.GUI.QLKhachHangGUI.resources
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.GUI.Source.resources
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.Properties.Resources.resources

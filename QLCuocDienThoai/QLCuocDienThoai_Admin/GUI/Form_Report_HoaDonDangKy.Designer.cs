@@ -1,6 +1,6 @@
 ﻿namespace QLCuocDienThoai_Admin.GUI
 {
-    partial class Report_HoaDonDangKy
+    partial class Form_Report_HoaDonDangKy
     {
         /// <summary>
         /// Required designer variable.
@@ -38,19 +38,19 @@
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(863, 698);
+            this.reportViewer1.Size = new System.Drawing.Size(800, 450);
             this.reportViewer1.TabIndex = 0;
             this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
-            // Report_HoaDonDangKy
+            // Form_Report_HoaDonDangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(863, 698);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "Report_HoaDonDangKy";
-            this.Text = "Report_HoaDonDangKy";
-            this.Load += new System.EventHandler(this.Report_HoaDonDangKy_Load);
+            this.Name = "Form_Report_HoaDonDangKy";
+            this.Text = "Form_Report_HoaDonDangKy";
+            this.Load += new System.EventHandler(this.Form_Report_HoaDonDangKy_Load);
             this.ResumeLayout(false);
 
         }
