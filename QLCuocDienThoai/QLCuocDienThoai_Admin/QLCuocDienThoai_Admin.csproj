@@ -63,10 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\ChiTietSuDungDAL.cs" />
     <Compile Include="DAL\DataAccessHelper.cs" />
     <Compile Include="DAL\HoaDonDangKyDAL.cs" />
     <Compile Include="DAL\KhachHangDAL.cs" />
     <Compile Include="DAL\ThongTinSimDAL.cs" />
+    <Compile Include="DLL\ChiTietSuDungDLL.cs" />
     <Compile Include="DLL\HoaDonDangKyDLL.cs" />
     <Compile Include="DLL\KhachHangDLL.cs" />
     <Compile Include="DLL\ThongTinSimDLL.cs" />

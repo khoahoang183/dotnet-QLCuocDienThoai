@@ -77,7 +77,6 @@
             this.txtTenFile.Name = "txtTenFile";
             this.txtTenFile.Size = new System.Drawing.Size(181, 22);
             this.txtTenFile.TabIndex = 40;
-            this.txtTenFile.TextChanged += new System.EventHandler(this.txtTenFile_TextChanged);
             // 
             // txtPhatSinh
             // 
@@ -98,7 +97,6 @@
             this.label9.Size = new System.Drawing.Size(63, 17);
             this.label9.TabIndex = 39;
             this.label9.Text = "Tên File:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label3
             // 
@@ -137,8 +135,7 @@
             this.label4.Size = new System.Drawing.Size(41, 17);
             this.label4.TabIndex = 34;
             this.label4.Text = "Năm:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
+           // 
             // txtNam
             // 
             this.txtNam.Location = new System.Drawing.Point(514, 33);
@@ -146,8 +143,7 @@
             this.txtNam.Name = "txtNam";
             this.txtNam.Size = new System.Drawing.Size(79, 22);
             this.txtNam.TabIndex = 35;
-            this.txtNam.TextChanged += new System.EventHandler(this.txtNam_TextChanged);
-            // 
+             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dgvTable);
