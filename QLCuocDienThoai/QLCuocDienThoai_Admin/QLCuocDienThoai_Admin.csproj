@@ -85,6 +85,12 @@
     <Compile Include="GUI\AdminManagementForm.Designer.cs">
       <DependentUpon>AdminManagementForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\QLChiTietSuDungGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QLChiTietSuDungGUI.Designer.cs">
+      <DependentUpon>QLChiTietSuDungGUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\QLDangKiSimGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,12 @@
     </Compile>
     <Compile Include="GUI\QLKhachHangGUI.Designer.cs">
       <DependentUpon>QLKhachHangGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QLSuDungTinhCuocGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QLSuDungTinhCuocGUI.Designer.cs">
+      <DependentUpon>QLSuDungTinhCuocGUI.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Report_HoaDonDangKy.cs">
       <SubType>Form</SubType>
@@ -120,11 +132,17 @@
     <EmbeddedResource Include="GUI\AdminManagementForm.resx">
       <DependentUpon>AdminManagementForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QLChiTietSuDungGUI.resx">
+      <DependentUpon>QLChiTietSuDungGUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\QLDangKiSimGUI.resx">
       <DependentUpon>QLDangKiSimGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\QLKhachHangGUI.resx">
       <DependentUpon>QLKhachHangGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QLSuDungTinhCuocGUI.resx">
+      <DependentUpon>QLSuDungTinhCuocGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Report_HoaDonDangKy.rdlc" />
     <EmbeddedResource Include="GUI\Report_HoaDonDangKy.resx">

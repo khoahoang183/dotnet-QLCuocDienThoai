@@ -184,3 +184,7 @@ D:\Khoa-MHPL\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_User\obj\Debug\QLCu
 D:\Khoa-MHPL\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_User\obj\Debug\QLCuocDienThoai_User.csproj.CopyComplete
 D:\Khoa-MHPL\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_User\obj\Debug\QLCuocDienThoai_User.dll
 D:\Khoa-MHPL\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_User\obj\Debug\QLCuocDienThoai_User.pdb
+F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_User\bin\EntityFramework.dll
+F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_User\bin\EntityFramework.SqlServer.dll
+F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_User\bin\EntityFramework.xml
+F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_User\bin\EntityFramework.SqlServer.xml

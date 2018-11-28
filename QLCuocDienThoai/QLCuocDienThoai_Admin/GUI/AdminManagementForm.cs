@@ -31,7 +31,8 @@ namespace QLCuocDienThoai_Admin.GUI
 
         private void btnPhieuNhap_Click(object sender, EventArgs e)
         {
-
+            QLChiTietSuDungGUI form = new QLChiTietSuDungGUI();
+            form.Show();
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
