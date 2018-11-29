@@ -68,7 +68,6 @@ F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\bin\Debug\pt\Mic
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.GUI.QLSuDungTinhCuocGUI.resources
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.GUI.Report_HoaDonDangKy.resources
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.csproj.CopyComplete
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.GUI.QLChiTietSuDungGUI.resources
@@ -184,3 +183,5 @@ F:\Github stuffs\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug
 F:\Github stuffs\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.csproj.CopyComplete
 F:\Github stuffs\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.exe
 F:\Github stuffs\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.pdb
+F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.csprojAssemblyReference.cache
+F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.GUI.QLHoaDonTinhCuocGUI.resources

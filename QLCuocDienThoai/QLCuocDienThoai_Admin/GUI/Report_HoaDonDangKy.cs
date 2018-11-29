@@ -13,7 +13,7 @@ namespace QLCuocDienThoai_Admin.GUI
 {
     public partial class Report_HoaDonDangKy : Form
     {
-        public int MAHDDK; // chua truyen qua sao no hieu lul
+        public int MAHDDK; 
         public Report_HoaDonDangKy()
         {
             InitializeComponent();

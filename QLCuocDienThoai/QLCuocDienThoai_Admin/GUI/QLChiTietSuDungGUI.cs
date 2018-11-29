@@ -85,11 +85,11 @@ namespace QLCuocDienThoai_Admin.GUI
 
         private void btnDoc_Click(object sender, EventArgs e)
         {
+            QLChiTietSuDungGUI_Load(sender, e);
+       
             dgvTable.DataSource = null;
             dgvTable.Refresh();
-           
-           
-           
+                              
             StreamReader sr = new StreamReader(txtTenFile.Text.Trim());
             string s = "";
             int countline = File.ReadLines(txtTenFile.Text.Trim()).Count();
@@ -200,6 +200,7 @@ namespace QLCuocDienThoai_Admin.GUI
 
             sr.Close();
             Luubtn.Enabled = true;
+            MessageBox.Show("Đọc File Log hoàn tất!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnLamMoi_Click(object sender, EventArgs e)

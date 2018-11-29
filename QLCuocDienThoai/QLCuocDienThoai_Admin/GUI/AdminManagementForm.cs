@@ -37,7 +37,8 @@ namespace QLCuocDienThoai_Admin.GUI
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-
+            QLHoaDonTinhCuocGUI form = new QLHoaDonTinhCuocGUI();
+            form.Show();
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)

@@ -66,10 +66,13 @@
     <Compile Include="DAL\ChiTietSuDungDAL.cs" />
     <Compile Include="DAL\DataAccessHelper.cs" />
     <Compile Include="DAL\HoaDonDangKyDAL.cs" />
+    <Compile Include="DAL\HoaDonTinhCuocDAL.cs" />
+    <Compile Include="DLL\HoaDonTinhCuocDLL.cs" />
     <Compile Include="DAL\KhachHangDAL.cs" />
     <Compile Include="DAL\ThongTinSimDAL.cs" />
     <Compile Include="DLL\ChiTietSuDungDLL.cs" />
     <Compile Include="DLL\HoaDonDangKyDLL.cs" />
+    <Compile Include="DTO\HoaDonTinhCuoc.cs" />
     <Compile Include="DLL\KhachHangDLL.cs" />
     <Compile Include="DLL\ThongTinSimDLL.cs" />
     <Compile Include="DTO\ChiTietSuDung.cs" />
@@ -100,17 +103,17 @@
     <Compile Include="GUI\QLDangKiSimGUI.Designer.cs">
       <DependentUpon>QLDangKiSimGUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\QLHoaDonTinhCuocGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QLHoaDonTinhCuocGUI.Designer.cs">
+      <DependentUpon>QLHoaDonTinhCuocGUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\QLKhachHangGUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\QLKhachHangGUI.Designer.cs">
       <DependentUpon>QLKhachHangGUI.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\QLSuDungTinhCuocGUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\QLSuDungTinhCuocGUI.Designer.cs">
-      <DependentUpon>QLSuDungTinhCuocGUI.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Report_HoaDonDangKy.cs">
       <SubType>Form</SubType>
@@ -141,11 +144,11 @@
     <EmbeddedResource Include="GUI\QLDangKiSimGUI.resx">
       <DependentUpon>QLDangKiSimGUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QLHoaDonTinhCuocGUI.resx">
+      <DependentUpon>QLHoaDonTinhCuocGUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\QLKhachHangGUI.resx">
       <DependentUpon>QLKhachHangGUI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\QLSuDungTinhCuocGUI.resx">
-      <DependentUpon>QLSuDungTinhCuocGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Report_HoaDonDangKy.resx">
       <DependentUpon>Report_HoaDonDangKy.cs</DependentUpon>
