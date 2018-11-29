@@ -72,6 +72,7 @@
     <Compile Include="DLL\HoaDonDangKyDLL.cs" />
     <Compile Include="DLL\KhachHangDLL.cs" />
     <Compile Include="DLL\ThongTinSimDLL.cs" />
+    <Compile Include="DTO\ChiTietSuDung.cs" />
     <Compile Include="DTO\HoaDonDangKy.cs" />
     <Compile Include="DTO\KhachHang.cs" />
     <Compile Include="DTO\ThongTinSim.cs" />

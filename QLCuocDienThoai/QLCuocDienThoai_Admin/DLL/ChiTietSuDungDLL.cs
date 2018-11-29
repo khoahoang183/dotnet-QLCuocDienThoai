@@ -16,5 +16,17 @@ namespace QLCuocDienThoai_Admin.DLL
         {
             return dal.CountSIM();
         }
+        public bool AddData(ChiTietSuDung chitiet)
+        {
+            return dal.AddData(chitiet);
+        }
+        public DataTable GetData()
+        {
+            return dal.GetData();
+        }
+        public DataTable SearchData(int MaSIM)
+        {
+            return dal.SearchData(MaSIM);
+        }
     }
 }
