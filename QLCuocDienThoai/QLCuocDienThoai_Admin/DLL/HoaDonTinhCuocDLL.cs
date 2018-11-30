@@ -19,5 +19,10 @@ namespace QLCuocDienThoai_Admin.DAL
         {
             return dal.GetData_CapNhat(phihangthang);
         }
+        public bool AddData(HoaDonTinhCuoc hd)
+        {    
+            
+            return dal.AddData(hd);
+        }
     }
 }

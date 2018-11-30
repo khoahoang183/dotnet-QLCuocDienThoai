@@ -12,6 +12,8 @@ namespace QLCuocDienThoai_Admin.DTO
         int MASIM;
         double TONGTIEN;
         int THANHTOAN;
+        int THANG;
+        int NAM;
 
         public int GetMAHDTC()
         {
@@ -46,6 +48,22 @@ namespace QLCuocDienThoai_Admin.DTO
         public void SetTHANHTOAN(int THANHTOAN)
         {
             this.THANHTOAN = THANHTOAN;
+        }
+        public int GetTHANG()
+        {
+            return THANG;
+        }
+        public void SetTHANG(int THANG)
+        {
+            this.THANG = THANG;
+        }
+        public int GetNAM()
+        {
+            return NAM;
+        }
+        public void SetNAM(int NAM)
+        {
+            this.NAM = NAM;
         }
     }
 }

@@ -27,6 +27,7 @@ namespace QLCuocDienThoai_Admin.GUI
 
         private void QLHoaDonTinhCuocGUI_Load(object sender, EventArgs e)
         {
+           
             txtPhiHangThang.Text = "50000";
             this.Location = new Point(150, 50);
 
@@ -40,9 +41,9 @@ namespace QLCuocDienThoai_Admin.GUI
             txtMaHDTC.Enabled = false;
             txtMASIM2.Enabled = false;
             txtNam2.Enabled = false;
-            abc.Enabled = false;
             txtTongTien.Enabled = false;
             txtThanhToan.Enabled = false;
+           
 
 
 
@@ -58,6 +59,7 @@ namespace QLCuocDienThoai_Admin.GUI
             dgvTable2.AutoResizeColumns();
 
             BingDing();
+            
         }
 
         void BingDing()    // load du hieu qua cac text
@@ -113,8 +115,43 @@ namespace QLCuocDienThoai_Admin.GUI
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
-        {
+        {   
+            try
+            { 
+            DialogResult dialog = MessageBox.Show("Bạn đã chắc chắn muốn lưu?", "Xác Nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialog == DialogResult.Yes)
+                {
+                    for (int i = 0; i < dgvTable2.Rows.Count; i++)
+                    {
+                        HoaDonTinhCuoc hd = new HoaDonTinhCuoc();
+                        hd.SetMASIM(Convert.ToInt32(dgvTable2.Rows[i].Cells[0].Value));
+                        hd.SetTONGTIEN(Convert.ToDouble(dgvTable2.Rows[i].Cells[2].Value));
+                        hd.SetTHANG(Convert.ToInt32(dgvTable2.Rows[i].Cells[4].Value));
+                        hd.SetNAM(Convert.ToInt32(dgvTable2.Rows[i].Cells[5].Value));
+                        int ngay = Convert.ToInt32(dgvTable2.Rows[i].Cells[3].Value);
+                        DateTime b = new DateTime(hd.GetNAM(), hd.GetTHANG(), ngay, 0, 0, 0);
+                        TimeSpan songay = new TimeSpan();
+                        songay = DateTime.Today - b;
 
+                        if (songay.TotalDays < 30)
+                            hd.SetTHANHTOAN(1);
+                        else if (songay.TotalDays >= 30 && songay.TotalDays < 33)
+                            hd.SetTHANHTOAN(2);
+                        else if (songay.TotalDays >= 33)
+                            hd.SetTHANHTOAN(3);
+                        hoadondll.AddData(hd);
+
+                    }
+                    
+                }
+            }
+            catch (Exception ex)
+            {
+                string mex = ex.Message;
+                
+            }
+
+            QLHoaDonTinhCuocGUI_Load(sender, e);
         }
     }
 }

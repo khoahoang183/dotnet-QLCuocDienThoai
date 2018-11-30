@@ -174,7 +174,6 @@ F:\Github stuffs\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug
 F:\Github stuffs\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.GUI.QLChiTietSuDungGUI.resources
 F:\Github stuffs\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.GUI.QLDangKiSimGUI.resources
 F:\Github stuffs\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.GUI.QLKhachHangGUI.resources
-F:\Github stuffs\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.GUI.QLSuDungTinhCuocGUI.resources
 F:\Github stuffs\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.GUI.Report_HoaDonDangKy.resources
 F:\Github stuffs\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.GUI.Source.resources
 F:\Github stuffs\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.Properties.Resources.resources
@@ -185,3 +184,4 @@ F:\Github stuffs\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug
 F:\Github stuffs\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.pdb
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.csprojAssemblyReference.cache
 F:\GitHub\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.GUI.QLHoaDonTinhCuocGUI.resources
+F:\Github stuffs\QLCuocDienThoai\QLCuocDienThoai\QLCuocDienThoai_Admin\obj\Debug\QLCuocDienThoai_Admin.GUI.QLHoaDonTinhCuocGUI.resources
